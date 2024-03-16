@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SettingsFragment">
+
+    <TextView
+        android:id="@+id/text_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/settings"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_settings">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageViewBusiness"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/business"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="business" />
+
+            <CheckBox
+                android:id="@+id/checkBoxBusiness"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/business"
+                app:layout_constraintStart_toEndOf="@id/imageViewBusiness"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/imageViewBusiness"
+                app:layout_constraintBottom_toBottomOf="@id/imageViewBusiness"
+                android:layout_marginStart="8dp"/>
+
+            <ImageView
+                android:id="@+id/imageViewEntertainment"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/entertainment"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkBoxBusiness"
+                android:contentDescription="entertainment" />
+
+            <CheckBox
+                android:id="@+id/checkBoxEntertainment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/entertainment"
+                app:layout_constraintStart_toEndOf="@id/imageViewEntertainment"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/imageViewEntertainment"
+                app:layout_constraintBottom_toBottomOf="@id/imageViewEntertainment"
+                android:layout_marginStart="8dp"/>
+
+            <ImageView
+                android:id="@+id/imageViewGeneral"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/general"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/checkBoxEntertainment"
+                android:contentDescription="general" />
+
+            <CheckBox
+                android:id="@+id/checkBoxGeneral"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/general"
+                app:layout_constraintStart_toEndOf="@id/imageViewGeneral"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/imageViewGeneral"
+                app:layout_constraintBottom_toBottomOf="@id/imageViewGeneral"
+                android:layout_marginStart="8dp"/>
+
+            <ImageView
+                android:id="@+id/imageViewHealth"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/health"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/checkBoxGeneral"
+                android:contentDescription="health" />
+
+            <CheckBox
+                android:id="@+id/checkBoxHealth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/health"
+                app:layout_constraintStart_toEndOf="@id/imageViewHealth"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/imageViewHealth"
+                app:layout_constraintBottom_toBottomOf="@id/imageViewHealth"
+                android:layout_marginStart="8dp"/>
+
+            <ImageView
+                android:id="@+id/imageViewScience"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/science"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/checkBoxHealth"
+                android:contentDescription="science" />
+
+            <CheckBox
+                android:id="@+id/checkBoxScience"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/science"
+                app:layout_constraintStart_toEndOf="@id/imageViewScience"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/imageViewScience"
+                app:layout_constraintBottom_toBottomOf="@id/imageViewScience"
+                android:layout_marginStart="8dp"/>
+
+            <ImageView
+                android:id="@+id/imageViewSports"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/sports"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/checkBoxScience"
+                android:contentDescription="sports" />
+
+            <CheckBox
+                android:id="@+id/checkBoxSports"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/sports"
+                app:layout_constraintStart_toEndOf="@id/imageViewSports"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/imageViewSports"
+                app:layout_constraintBottom_toBottomOf="@id/imageViewSports"
+                android:layout_marginStart="8dp"/>
+
+            <ImageView
+                android:id="@+id/imageViewTechnology"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/technology"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/checkBoxSports"
+                android:contentDescription="technology" />
+
+            <CheckBox
+                android:id="@+id/checkBoxTechnology"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/technology"
+                app:layout_constraintStart_toEndOf="@id/imageViewTechnology"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/imageViewTechnology"
+                app:layout_constraintBottom_toBottomOf="@id/imageViewTechnology"
+                android:layout_marginStart="8dp"/>
+
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#4CAF50"
+                android:text="@string/save"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkBoxTechnology" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
